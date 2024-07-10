@@ -1,21 +1,17 @@
-## redoc-npm
+## Redoc-NPM
 This setup provides a straightforward way to serve OpenAPI documentation and can be easily extended or customized to fit more specific needs.
 
 
 ## Project Structure
+```plaintext
 api-docs
-
 ├── public
-
 │   ├── openapi.yaml
-
 │   ├── pet-openapi.yaml
-
 │   └── index.html
-
 ├── package.json
-
 └── server.js
+```
 
 
 ## Install Required Dependencies
@@ -26,8 +22,3 @@ api-docs
 `npm start`
 
 Open a web browser and navigate to http://localhost:8080. You should see the Redoc interface rendering your OpenAPI specification.
-
-
-
-
-
