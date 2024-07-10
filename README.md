@@ -1,17 +1,26 @@
-# redoc-npm
+## redoc-npm
 This setup provides a straightforward way to serve OpenAPI documentation and can be easily extended or customized to fit more specific needs.
 
-# Project Structure
-api-docs/
-├── public/
+
+## Project Structure
+api-docs
+
+├── public
+
 │   ├── openapi.yaml
+
 │   ├── pet-openapi.yaml
+
 │   └── index.html
+
 ├── package.json
+
 └── server.js
 
-# Install Required Dependencies
+
+## Install Required Dependencies
 `npm install http-server --save-dev`
+
 
 # Run the Project
 `npm start`
