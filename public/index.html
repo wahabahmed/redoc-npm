@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Documentation</title>
+    <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .spec-selector {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>API Documentation</h1>
+    <div class="spec-selector">
+        <label for="spec-select">Choose API Spec:</label>
+        <select id="spec-select" onchange="loadSpec()">
+            <option value="openapi.yaml" selected>OpenAPI 1</option>
+            <option value="pet-openapi.yaml">OpenAPI 2</option>
+        </select>
+    </div>
+    <redoc id="redoc-container" spec-url="openapi.yaml"></redoc>
+    <script>
+        function loadSpec() {
+            var select = document.getElementById("spec-select");
+            var url = select.value;
+            Redoc.init(url, {}, document.getElementById("redoc-container"));
+        }
+
+        loadSpec();
+    </script>
+</body>
+</html>
+
